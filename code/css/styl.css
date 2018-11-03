@@ -141,9 +141,9 @@ body {
     background-size: cover;
     position: relative;
     color: #4a4a4a;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
 }
 
 .upcoming-match {
@@ -152,7 +152,7 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     border: 1px solid #191919;
     font-weight: bold;
-    /*margin-top: 250px;*/
+    margin-top: 120px;
 }
 
 #upcoming-date {
@@ -223,7 +223,7 @@ body {
     width: fit-content;
     background-color: rgba(0, 0, 0, 0.6);
     border: 1px solid #191919;
-    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .flex-wrap-matches{
@@ -232,9 +232,12 @@ body {
 }
 
 .flex-wrap-evenly{
+    height: calc(100vh - 126px);;
+    width: 960px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
