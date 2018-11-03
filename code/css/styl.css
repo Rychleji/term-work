@@ -26,7 +26,9 @@ body {
     display: flex;
 }
 
-.user-area a {
+.user-area button {
+    font-size: 16px;
+    background-color: transparent;
     margin-left: 15px;
     color: #f2f2f2;
     text-decoration: none;
@@ -35,9 +37,36 @@ body {
     border-radius: 10%;
 }
 
-.user-area a:hover {
+.user-area button:hover {
     color: #ff4a46;
     border: 1px solid #ff4a46;
+}
+
+.user-area button:focus {
+    color: #ff4a46;
+    border: 1px solid #ff4a46;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    animation: zoom 0.5s;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 6px;
 }
 
 .header-box-bg {
@@ -224,6 +253,8 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     border: 1px solid #191919;
     margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .flex-wrap-matches{
