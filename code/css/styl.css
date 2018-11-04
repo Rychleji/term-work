@@ -17,6 +17,18 @@ body {
     color: #4a4a4a;
 }
 
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
 .user-area {
     width: 100%;
     padding-top: 8px;
@@ -50,24 +62,64 @@ body {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
-    animation: zoom 0.5s;
 }
 
 .modal-content {
-    max-width: 700px;
+    text-align: center;
+    max-width: 600px;
     background-color: #fefefe;
-    margin: 15% auto;
+    margin: 10% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 60%;
     border-radius: 6px;
+    position: relative;
+}
+
+.modal-content img {
+    width: 270px;
+    height: auto;
+}
+
+.close-modal {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close-modal:hover {
+    color: #9a171a;
+}
+
+.modal-content button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 26px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    font-size: 20px;
+}
+
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
 .header-box-bg {
@@ -312,6 +364,7 @@ main {
     display: flex;
     align-items: flex-start;
     justify-content: left;
+    min-height: calc(100vh - 326px);
 }
 
 hr.heading-splitter {
@@ -335,22 +388,23 @@ hr.heading-splitter {
 }
 
 article {
-    margin-top: 40px;
+    margin-top: 35px;
 }
 
 article hr {
     height: 1px;
     border: 0;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.3) 100%);
 }
 
 .league-table-box {
     width: 40%;
 }
 
-.table {
+.my-table {
     color: #f2f2f2;
     font-size: 18px;
+    margin-bottom: 40px;
 }
 
 .team {
@@ -409,6 +463,62 @@ article hr {
     transform: skew(-10deg);
     background: #4E080A;
     z-index: -1;
+}
+
+.players {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    padding-left: 10px;
+    color: #f2f2f2;
+    font-size: 18px;
+}
+
+tr, td, caption {
+    background-color: #141414;
+}
+
+.table-caption {
+    position: relative;
+    padding: 10px 15px 8px 15px;
+    display: block;
+    background-color: #141414;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.table-caption span.capt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #4E080A;
+    padding: 10px 45px 8px 15px;
+    color: #f2f2f2;
+}
+
+.table-caption span.capt::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    top: 0;
+    right: -5px;
+    bottom: 0;
+    transform: skew(-10deg);
+    background: #9a171a;
+    z-index: -1;
+}
+
+tr {
+    border-bottom: 3px solid #292929;
+}
+
+td, th {
+    padding: 10px 5px 8px 5px;
 }
 
 footer {
