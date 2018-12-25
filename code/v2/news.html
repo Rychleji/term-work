@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styl.css">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>HC Dynamo Pardubice - neoficiální stránka hokejového klubu</title>
+</head>
+<body>
+<header>
+    <div class="user-area">
+        <div class="full-width-wrapper">
+            <button id="login-btn">Login</button>
+            <button id="signup-btn">Sign up</button>
+        </div>
+    </div>
+    <div class="header-box-bg">
+        <div class="header-box">
+            <div id="header-logo-box">
+                <img id="header-logo" src="img/logo-dynamo.png" alt="Dynamo Logo"></div>
+            <div id="header-web-title">Dynamo Pardubice</div>
+            <nav id="nav">
+                <a id="first" href="index.html">HOME</a>
+                <a id="second" href="team.html">TEAM</a>
+                <a id="third" href="">MATCHES</a>
+                <a id="fourth" href="">NEWS</a>
+                <a id="fifth" href="">FANBOOK</a>
+                <hr>
+            </nav>
+        </div>
+    </div>
+</header>
+<div id="user-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="document.getElementById('user-modal').style.display='none'">×</span>
+        <img src="img/logo-dynamo.png">
+        <h2>User login</h2>
+        <form action="action_page.php">
+            <input type="text" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Password" name="psw" required>
+            <button type="submit" class="modalbtn">Login</button>
+        </form>
+    </div>
+</div>
+<script src="script/modal.js"></script>
+<main>
+    <div class="full-width">
+        <h2>News</h2>
+        <hr class="heading-splitter">
+        <article>
+            <div class="title">
+                <h3 class="news">Lorem ipsum dolor sit amet</h3>
+                <span>10 Oct 2018 | 18:00</span></div>
+            <div class="article-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae massa mi. Quisque eros
+                tellus,
+                facilisis ac felis ut, euismod sodales nibh. In ac metus ut massa dignissim malesuada. Praesent non
+                auctor
+                enim. Aenean nunc arcu, eleifend ut mollis eu, euismod eget felis. Praesent eleifend tristique lacinia.
+                Fusce at semper quam, et interdum arcu. Nam fringilla, enim quis consectetur porta, lorem neque
+                vulputate
+                purus, at pretium felis enim et purus. Vestibulum vel tempor magna. Nullam eleifend efficitur nisi, sit
+                amet
+                dignissim justo. Quisque aliquet venenatis eros id suscipit.
+            </div>
+        </article>
+        <article>
+            <div class="title">
+                <h3 class="news">Lorem ipsum dolor sit amet</h3>
+                <span>10 Oct 2018 | 18:00</span></div>
+            <div class="article-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae massa mi. Quisque eros
+                tellus,
+                facilisis ac felis ut, euismod sodales nibh. In ac metus ut massa dignissim malesuada. Praesent non
+                auctor
+                enim. Aenean nunc arcu, eleifend ut mollis eu, euismod eget felis. Praesent eleifend tristique lacinia.
+                Fusce at semper quam, et interdum arcu. Nam fringilla, enim quis consectetur porta, lorem neque
+                vulputate
+                purus, at pretium felis enim et purus. Vestibulum vel tempor magna. Nullam eleifend efficitur nisi, sit
+                amet
+                dignissim justo. Quisque aliquet venenatis eros id suscipit.
+            </div>
+        </article>
+        <article>
+            <div class="title">
+                <h3 class="news">Lorem ipsum dolor sit amet</h3>
+                <span>10 Oct 2018 | 18:00</span></div>
+            <div class="article-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae massa mi. Quisque eros
+                tellus,
+                facilisis ac felis ut, euismod sodales nibh. In ac metus ut massa dignissim malesuada. Praesent non
+                auctor
+                enim. Aenean nunc arcu, eleifend ut mollis eu, euismod eget felis. Praesent eleifend tristique lacinia.
+                Fusce at semper quam, et interdum arcu. Nam fringilla, enim quis consectetur porta, lorem neque
+                vulputate
+                purus, at pretium felis enim et purus. Vestibulum vel tempor magna. Nullam eleifend efficitur nisi, sit
+                amet
+                dignissim justo. Quisque aliquet venenatis eros id suscipit.
+            </div>
+        </article>
+    </div>
+</main>
+<footer>
+    <div class="full-width-wrapper">
+        konec stranky ..
+    </div>
+</footer>
+</body>
+</html>
