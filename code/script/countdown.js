@@ -1,4 +1,4 @@
-var countDownDate = new Date("Nov 20, 2018 17:30:00").getTime();
+var countDownDate = new Date("Nov 28, 2018 17:30:00").getTime();
 
 setInterval(function () {
 
