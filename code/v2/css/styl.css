@@ -44,12 +44,12 @@ body {
         height: 100%;
     }
 
-    .user-area button {
+    .user-area a {
         margin: 5px 0;
     }
 }
 
-.user-area button {
+.user-area a {
     font-size: 16px;
     background-color: transparent;
     margin-left: 15px;
@@ -60,32 +60,23 @@ body {
     border-radius: 10%;
 }
 
-.user-area button:hover {
-    cursor: pointer;
+.user-area a:hover {
     color: #ff4a46;
     border: 1px solid #ff4a46;
 }
 
-.user-area button:focus {
-    color: #ff4a46;
-    border: 1px solid #ff4a46;
+@media screen and (max-width: 600px) {
+    .user-content {
+        max-width: 600px;
+    }
+    .user-content img {
+        display: none;
+    }
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 2;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
+.user-content {
     text-align: center;
-    max-width: 600px;
+    max-width: 100%;
     background-color: #f2f2f2;
     margin: 10% auto;
     padding: 20px;
@@ -95,25 +86,12 @@ body {
     position: relative;
 }
 
-.modal-content img {
+.user-content img {
     width: 270px;
     height: auto;
 }
 
-.close-modal {
-    cursor: pointer;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.close-modal:hover {
-    color: #9a171a;
-}
-
-.modal-content button {
+.user-content button {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -124,7 +102,7 @@ body {
     font-size: 20px;
 }
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=email] {
     width: 90%;
     padding: 12px 20px;
     margin: 8px 26px;
@@ -240,10 +218,6 @@ input[type=text], input[type=password] {
     margin-right: auto;
 }
 
-/*#header-web-title:hover {
-    text-shadow: 0 0 0 rgb(154, 23, 26);
-}*/
-
 .full-width-wrapper, main {
     width: 960px;
     margin: 0 auto;
@@ -333,20 +307,6 @@ input[type=text], input[type=password] {
     border-color: #a0171a;
 }
 
-/*.recent-matches {
-    width: fit-content;
-    background-color: rgba(0, 0, 0, 0.6);
-    border: 1px solid #191919;
-    margin-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.flex-wrap-matches {
-    display: flex;
-    flex-wrap: wrap;
-}*/
-
 .flex-wrap-evenly {
     height: calc(100vh - 126px);
     width: 960px;
@@ -362,43 +322,6 @@ input[type=text], input[type=password] {
         width: 100%;
     }
 }
-
-/*.match-card {
-    padding: 15px 20px;
-    color: #8f8f8f;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-}
-
-.match-card img {
-    display: inline-block;
-    max-width: 80px;
-    max-height: 80px;
-    width: 60px;
-    height: auto;
-}
-
-.recent-matches-description {
-    padding: 5px;
-    text-align: center;
-    max-width: 140px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.score {
-    font-family: "djb", sans-serif;
-    font-size: 15px;
-    letter-spacing: 2px;
-    color: white;
-    padding: 5px;
-    margin: 10px;
-    background-color: #404040;
-    border-radius: 20%;
-    text-align: center;
-}*/
 
 main {
     padding: 30px 0 40px 0;
